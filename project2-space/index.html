@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your To-Do List</h1>
+        <div id="questionnaire">
+            <h2>Tell us about yourself</h2>
+            <label for="userName">What is your name?</label>
+            <input type="text" id="userName" placeholder="Enter your name" required>
+
+            <label for="timeManagement">How do you rate your time management skills?</label>
+            <select id="timeManagement">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <label for="organizationInterest">Are you interested in improving your organizational skills?</label>
+            <select id="organizationInterest">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button id="submitBtn">Submit</button>
+        </div>
+
+        <div id="todoSection" style="display:none;">
+            <h2 id="greeting"></h2>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button id="addTaskBtn">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
